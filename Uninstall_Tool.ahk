@@ -49,6 +49,14 @@ IfMsgBox Yes
 		Sleep,5000
 		Send,{Enter}
 		}
+	ifExist,C:/Program Files (x86)/Swallow6.0/UNWISE.exe
+		{
+		Run C:/Program Files (x86)/Swallow6.0/UNWISE.exe
+		Sleep,2000
+		Send,{Enter}
+		Sleep,5000
+		Send,{Enter}
+		}
 	ifExist,C:/Program Files (x86)/VideoLAN/VLC/uninstall.exe
 		{
 		Run C:/Program Files (x86)/VideoLAN/VLC/uninstall.exe
@@ -104,7 +112,7 @@ IfMsgBox Yes
 	ifExist,C:/VideoLibPro_x86/uninstall_videolibpro_x86.exe
 		{
 		Run C:/VideoLibPro_x86/uninstall_videolibpro_x86.exe
-		Sleep,2000
+		Sleep,10000
 		Send,{Tab}{Enter}
 		Sleep,30000
 		Send,{Tab}{Enter}
@@ -112,7 +120,8 @@ IfMsgBox Yes
 	ifExist,C:/VideoLibPro_x64/uninstall_videolibpro_x64.exe
 		{
 		Run C:/VideoLibPro_x64/uninstall_videolibpro_x64.exe
-		Sleep,2000
+		Sleep,10000
+		Sleep,10000
 		Send,{Tab}{Enter}
 		Sleep,30000
 		Send,{Tab}{Enter}
@@ -178,6 +187,7 @@ IfMsgBox Yes
 	; 删除文件夹
 	FileRemoveDir,C:/Program Files (x86)/VideoLAN,1
 	FileRemoveDir,C:/Program Files (x86)/Swallow,1
+	FileRemoveDir,C:/Program Files (x86)/Swallow6.0,1
 	FileRemoveDir,C:/VideoLib,1
 	FileRemoveDir,C:/Program Files (x86)/GWQOcx,1
 	FileRemoveDir,C:/Users/Public/GWQOcx,1	
