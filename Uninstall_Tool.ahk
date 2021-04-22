@@ -112,18 +112,17 @@ IfMsgBox Yes
 	ifExist,C:/VideoLibPro_x86/uninstall_videolibpro_x86.exe
 		{
 		Run C:/VideoLibPro_x86/uninstall_videolibpro_x86.exe
-		Sleep,10000
+		Sleep,5000
 		Send,{Tab}{Enter}
-		Sleep,30000
+		Sleep,60000
 		Send,{Tab}{Enter}
 		}
 	ifExist,C:/VideoLibPro_x64/uninstall_videolibpro_x64.exe
 		{
 		Run C:/VideoLibPro_x64/uninstall_videolibpro_x64.exe
-		Sleep,10000
-		Sleep,10000
+		Sleep,5000
 		Send,{Tab}{Enter}
-		Sleep,30000
+		Sleep,60000
 		Send,{Tab}{Enter}
 		}
 	ifExist,C:/VideoLibPro_x86/RTCBusFile\unins000.exe
