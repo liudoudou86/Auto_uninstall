@@ -7,7 +7,7 @@ Create:2020/09/22
 MsgBox,4,卸载工具,是否开始卸载插件?
 IfMsgBox Yes
 	{
-	BlockInput,on
+	; BlockInput,on
 	; 卸载程序路径
 	ifExist,C:/Program Files (x86)/Tiandy/TDSXLib/unins000.exe
 		{
@@ -175,7 +175,7 @@ IfMsgBox Yes
 		Sleep,5000
 		Send,{Enter}
 		}
-	BlockInput,off
+	; BlockInput,off
 
 	; 杀进程
 	Process,Close,x_daemon.exe
